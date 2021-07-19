@@ -30,7 +30,7 @@
 
 .extension .rest-list li {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     padding-right: 20px;
     box-sizing: border-box;
 
@@ -42,6 +42,7 @@
 .extension .rest-list li>button{
     position: absolute;
     right: 0;
+    color: #aaa;
 }
 
 @media screen and (max-width:767px) {
