@@ -1,0 +1,17 @@
+.nav-list {
+    display: flex;
+    height: 46px;
+}
+
+.nav-list>li {
+    display: inline-block;
+    height: inherit;
+    padding: 15px;
+    box-sizing: border-box;
+    
+    font-weight: 600;
+    cursor: pointer;
+}
+    .nav-list>li:hover{
+        border-bottom: 2px solid #ddd;
+    }

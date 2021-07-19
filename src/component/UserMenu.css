@@ -1,0 +1,31 @@
+.user-menu {
+    display: flex;
+    align-items: center;
+}
+
+.user-menu ul {
+    display: flex;
+    cursor: pointer;  
+}
+
+.user-menu ul>li+li {
+    margin-left: 10px;
+}
+
+.user-menu button.company {
+    height: 30px;
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 0 10px;
+    font-size: 13px;
+    border-radius: 20px;
+    margin-left: 30px;
+    cursor: pointer;  
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:1230px) {
+    .user-menu {
+        display: none;
+    }
+}

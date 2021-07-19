@@ -1,0 +1,41 @@
+.overlay {  
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    animation: padeIn .2s cubic-bezier(0,0,0,.7);
+    position: fixed;
+}
+
+.extension{
+    position: fixed;
+    width: 100%;
+    height: 625px;
+    background: #fff;
+
+    animation: padeIn .2s cubic-bezier(0,0,0,.7), slideDown .2s cubic-bezier(0,0,0,.7);
+    transform-origin: top;
+}
+
+.extension>.container {
+    max-width: 1060px;
+    margin: auto;
+    height: inherit;
+}
+
+@keyframes padeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
