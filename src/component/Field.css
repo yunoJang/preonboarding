@@ -24,6 +24,8 @@
     cursor: pointer;
     color: #888;
     margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
 }
     
 .explore-field .content-list li:last-child::after {
