@@ -1,6 +1,6 @@
 .nav-list {
     display: flex;
-    height: 46px;
+    height: 100%;
 }
 
 .nav-list>li {

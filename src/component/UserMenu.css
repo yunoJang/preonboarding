@@ -8,6 +8,13 @@
     cursor: pointer;  
 }
 
+.user-menu ul >li {
+    border-radius: 50%;
+    background: #aaa;
+    height: 32px;
+    width: 32px;
+}
+
 .user-menu ul>li+li {
     margin-left: 10px;
 }

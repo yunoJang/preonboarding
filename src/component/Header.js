@@ -23,8 +23,8 @@ function Header() {
     }
 
     return (
-        <>
-            <nav className='header' onMouseOver={onMouseOver}>
+        <header className='header'>
+            <nav className='container' onMouseOver={onMouseOver}>
                 <a href='/'>
                     <span className='logo'>wanted</span>
                 </a>
@@ -36,7 +36,7 @@ function Header() {
                 showId = {showId}
                 hideExtension = {hideExtension}
             />
-        </>
+        </header>
     )
 }
 
