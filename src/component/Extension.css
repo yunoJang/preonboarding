@@ -18,7 +18,6 @@
 
 .extension>.container {
     display: flex;
-    max-width: 1160px;
     margin: auto;
     height: inherit;
 }
