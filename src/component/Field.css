@@ -1,0 +1,32 @@
+.explore-field {
+    width: calc(100% / 6);
+    margin: 40px 30px 0 0;
+}
+
+.explore-field>header{
+    cursor: pointer;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.explore-field>header h2 {
+    font-weight: 600;
+}
+.explore-field>header button {
+    color: #aaa;
+}
+
+.explore-field .content-list li {
+    cursor: pointer;
+    color: #888;
+    margin: 15px 0;
+}
+    
+.explore-field .content-list li:last-child::after {
+    position: relative;
+    content: ">";
+}
