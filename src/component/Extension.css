@@ -9,7 +9,7 @@
 .extension{
     position: fixed;
     width: 100%;
-    height: 600px;
+    height: 520px;
     background: #fff;
 
     animation: padeIn .2s cubic-bezier(0,0,0,.7), slideDown .2s cubic-bezier(0,0,0,.7);
@@ -18,9 +18,33 @@
 
 .extension>.container {
     display: flex;
-    max-width: 1060px;
+    max-width: 1160px;
     margin: auto;
     height: inherit;
+}
+
+.extension .rest-list {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.extension .rest-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.extension .rest-list li::after {
+    content: '>';
+}
+
+@media screen and (max-width:767px) {
+    .overlay {
+        display: none;
+    }
 }
 
 @keyframes padeIn {

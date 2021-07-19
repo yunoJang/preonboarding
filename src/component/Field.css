@@ -15,6 +15,9 @@
 
 .explore-field>header h2 {
     font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .explore-field>header button {
     color: #aaa;
@@ -26,6 +29,9 @@
     margin: 15px 0;
     display: flex;
     justify-content: space-between;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
     
 .explore-field .content-list li:last-child::after {
