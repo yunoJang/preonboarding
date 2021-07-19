@@ -34,7 +34,7 @@ function Header() {
 
             <Extension 
                 showId = {showId}
-                hideExtension = {hideExtension}
+                hide = {hideExtension}
             />
         </header>
     )

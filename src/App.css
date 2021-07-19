@@ -5,3 +5,9 @@ html, body, #root, #app{
     height: 100vh;
     font-family: 'Noto Sans KR', sans-serif;
 }
+
+@media screen and (max-width:1200px) {
+    .container {
+        width: 95%;
+    }
+}

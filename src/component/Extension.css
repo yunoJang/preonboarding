@@ -23,22 +23,26 @@
     height: inherit;
 }
 
+/* rest list */
 .extension .rest-list {
     font-size: 17px;
     font-weight: 600;
 }
 
 .extension .rest-list li {
-    display: flex;
-    justify-content: space-between;
+    position: relative;
     margin-bottom: 30px;
+    padding-right: 20px;
+    box-sizing: border-box;
+
+    cursor: pointer;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
-
-.extension .rest-list li::after {
-    content: '>';
+.extension .rest-list li>button{
+    position: absolute;
+    right: 0;
 }
 
 @media screen and (max-width:767px) {
@@ -46,6 +50,7 @@
         display: none;
     }
 }
+
 
 @keyframes padeIn {
     from {

@@ -13,7 +13,7 @@ const exploreContent = [
 
 const restExploreContent = ['엔지니어링·설계','제조·생산','물류·무역','의료·제약·바이오','교육','법률·법집행기관','식·음료','건설·시설','공공·복지']
 
-function Extension({showId, hideExtension:hide}) {
+function Extension({showId, hide}) {
     
     const onMouseOver = event=> {
         if(event.target.classList.contains(OVERLAY_CLASSNAME)) {
@@ -29,31 +29,34 @@ function Extension({showId, hideExtension:hide}) {
             subContent = {column.subContent}
         />)
     }
-
-    const renderRestContent = ()=> {
-        return restExploreContent.map((content,index)=>
-            <li key={index}>{content}</li>
-        )
-    }
-
     return (
         showId ? 
         <div className={OVERLAY_CLASSNAME} onMouseOver={onMouseOver}>
             <div className='extension'>
                 <div className='container'>
                     {renderContent()}
-                    
-                    <div className='explore-field'>
-                        <ul className='rest-list'>
-                            {renderRestContent()}
-                        </ul>
-                    </div>
-
+                    <RestContent />
                 </div>
             </div>
         </div>
         : null
     )
+}
+
+function RestContent() {
+    const renderRestContent = ()=> {
+        return restExploreContent.map((content,index)=>
+            <li key={index}>{content}<button>&gt;</button></li>
+        )
+    }
+
+    return(
+        <div className='explore-field'>
+            <ul className='rest-list'>
+                {renderRestContent()}
+            </ul>
+        </div>
+    )   
 }
 
 export default Extension;
